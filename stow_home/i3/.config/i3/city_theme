@@ -1,0 +1,6 @@
+set $bg-color 			        #9522d4
+set $inactive-bg-color	        #4f0775
+set $text-color			        #ffffff	
+set $inactive-text-color        #aaaaaa
+set $urgent-bg-color		    #ee00ff
+set $background-image           /home/coleman/Pictures/Backgrounds/city-pixel-art\ 2.jpg

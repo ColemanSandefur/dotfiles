@@ -1,0 +1,2 @@
+stow_home/vim/.vim/plugged/*
+stow_home/nvim/.config/nvim/autoload/plugged/*

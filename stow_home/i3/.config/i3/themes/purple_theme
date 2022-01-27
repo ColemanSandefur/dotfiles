@@ -1,0 +1,10 @@
+set $bg-color 			        #9522d4
+set $inactive-bg-color	        #4f0775
+set $text-color			        #ffffff	
+set $inactive-text-color        #aaaaaa
+set $urgent-bg-color		    #ee00ff
+set $bar-bg-color               #210042
+set $focused-workspace-color    #3b0175 #3b0175 #FFFFFF
+set $active-workspace-color     #3b0175 #3b0175 #FFFFFF
+set $inactive-workspace-color   #210042 #210042 #FFFFFF
+set $background-image           /home/coleman/Pictures/BackgroundImage2.png

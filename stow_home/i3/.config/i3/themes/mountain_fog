@@ -1,0 +1,6 @@
+set $bg-color 			        #e38400
+set $inactive-bg-color	        #913f00
+set $text-color			        #ffffff	
+set $inactive-text-color        #aaaaaa
+set $urgent-bg-color		    #ee00ff
+set $background-image           /home/coleman/Pictures/Backgrounds/silhouette-mountains-fog-lake.jpg
