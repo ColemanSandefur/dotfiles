@@ -1,0 +1,55 @@
+!f font 
+!URxvt.font: xft:iosevka-medium:size=13
+!URxvt.font: xft:RobotoMonoMedium:style=Medium:size=13
+!URxvt.font: xft:RobotoMonoMediumforPowerline:style=Medium:size=11, xft:Symbola:size=8
+!URxvt.font: xft:RobotoMono Nerd Font:style=Medium,Regular:size=11,RobotoMonoMediumforPowerline:style=Medium:size=11, xft:Symbola:size=8
+!URxvt.font: xft:RobotoMono Nerd Font:style=Medium,Regular:size=11,RobotoMonoMediumforPowerline:style=Medium:size=11, xft:Symbola:size=8, xft:Noto Sans Mono:style=Regular, xft:Inter,Inter Medium:style=Medium,Regular:size=10
+!URxvt.font: xft:Noto Sans Mono,Noto Sans Mono Medium:style=Medium,Regular:size=10
+!URxvt.font: xft:Inter:style=Regular:size=10
+URxvt.font: xft:RobotoMonoMedium:size=13,xft:RobotoMono Nerd Font:style=Regular:size=10,xft:Symbola:size=10
+
+URxvt.perl-ext-common: resize-font
+
+! scrollbar
+URxvt.scrollstyle: plain
+URxvt.scrollBar_right: true
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+! special
+urxvt.foreground:	#c5c8c6
+urxvt.background:	#1d1f21
+urxvt.cursorColor:	#c5c8c6
+
+! black
+urxvt.color0:		#282a2e
+urxvt.color8:		#373b41
+
+! red
+urxvt.color1:		#a54252
+urxvt.color9:		#cc6666
+
+! green
+urxvt.color2:		#8c9440
+urxvt.color10:		#b5bd68
+
+! yellow
+urxvt.color3:		#de935f
+urxvt.color11:		#f0c674
+
+! blue
+urxvt.color4:		#5f819d
+urxvt.color12:		#81a2be
+
+! magenta
+urxvt.color5:		#85678f
+urxvt.color13:		#b294bb
+
+! cyan
+urxvt.color6:		#5e2d87
+!urxvt.color6:       #f52327
+urxvt.color14:		#8abeb7
+
+! white
+urxvt.color7:		#707880
+urxvt.color15:		#c5c8c6
