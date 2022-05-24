@@ -1,0 +1,9 @@
+set $inactive-bg-color #30244a
+set $bg-color #e5c90e
+set $text-color #000000
+set $inactive-text-color #000000
+set $bar-bg-color #30244a
+set $focused-workspace-color #e5c90e #e5c90e #000000
+set $active-workspace-color #9fb8d8 #9fb8d8 #000000
+set $inactive-workspace-color #7686b7 #7686b7 #000000
+set $background-image /home/coleman/Pictures/Backgrounds/silhouette-mountains-fog-lake.jpg

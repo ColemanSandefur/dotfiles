@@ -1,1 +1,3 @@
-@theme "/home/coleman/.local/share/rofi/themes/purple-slate.rasi"
+//@theme "/home/coleman/.local/share/rofi/themes/purple-slate.rasi"
+//@theme "/home/coleman/.local/share/rofi/themes/slate-new.rasi"
+@theme "/home/coleman/.config/rofi/slate-new.rasi"
