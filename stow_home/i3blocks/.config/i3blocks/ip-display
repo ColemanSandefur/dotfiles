@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+current_ip="$(ip -4 a s wlp166s0 | awk '/inet / { print "IP: " $2 }')"
+
+COLOR_UP=${COLOR_UP:-#FFFFFF}
+COLOR_DOWN=${COLOR_DOWN:-#FF0000}
+
+if [ "$current_ip" == "" ]
+	then
+		echo "Not Connected!"
+		echo "Not Connected!"
+		echo $COLOR_DOWN
+else
+	echo "$current_ip"
+	echo "$current_ip"
+	echo $COLOR_UP
+
+fi
+
+exit 0

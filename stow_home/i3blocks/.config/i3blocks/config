@@ -1,0 +1,65 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+
+# Global properties
+separator=true
+separator_block_width=15
+#current_ip=$(ip a s wlp1s0 | awk '/inet / { print "IP: " $2 }')
+#SCRIPT_DIR=~/.config/i3blocks
+
+#[documentation]
+#full_text=Documentation
+#website=https://vivien.github.io/i3blocks
+#command=xdg-open "$website"
+#color=#f12711
+
+[camera-status]
+command=cameraStatus
+interval=30
+
+[pacman-updates]
+command=$SCRIPT_DIR/arch-update
+markup=pango
+interval= 3600
+QUIET=true
+WATCH=^linux.* ^pacman.*
+BASE_COLOR=#5fff5f
+UPDATE_COLOR=#FFFF85
+AUR=true  
+
+FA_PLUS_CIRCLE="<span font='FontAwesome'>\uf055</span>" 
+
+#[test]
+#full_text="x"
+#command=code ~
+
+[battery2]
+command=$SCRIPT_DIR/battery2
+markup=pango
+interval=30
+
+[disk]
+command=$SCRIPT_DIR/disk-status /
+LABEL=DISK: 
+DIR=/
+#ALERT_LOW=10
+interval=3600
+
+[ip]
+#command=ip a s wlp1s0 | awk '/inet / { print "IP: " $2 }'
+command=$SCRIPT_DIR/ip-display
+interval=10
+
+#[random-audio]
+#command=$SCRIPT_DIR/random-audio
+#interval=-1
+
+[time]
+#min_width=120
+command=date '+%a %m-%d-%Y %l:%M %P'
+interval=1

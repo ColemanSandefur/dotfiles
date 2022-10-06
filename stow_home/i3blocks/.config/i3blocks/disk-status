@@ -1,0 +1,31 @@
+#!/bin/bash
+
+#User will call command with paths as arguments ex.: disk-status /home/coleman and
+#it will print out the total free space available
+
+#will hold the output from the command
+TEXT="";
+
+#loop through all the paths passed into command
+for var in "$@"
+do
+	FILE_OUTPUT=$(df -h $var)
+	#get the file capacity and get the free space from it
+	FILE_CAPACITY="$(df -h -P -l $var | awk '/\/.*/ {print $4}')"
+
+	PATH_NAME="$(echo -e $FILE_OUTPUT | awk '/\/.*/ {print $NF}')"
+	BASE_NAME="$(basename $PATH_NAME)"
+	#echo "$BASE_NAME"
+	
+	#concatenate the output text with the file capacity
+	TEXT="$TEXT $BASE_NAME: $FILE_CAPACITY"
+done
+
+#there will be an extra space at the beginning from the concatination
+#this removes the first character from the string
+TEXT="${TEXT:1}"
+
+#add label
+#TEXT="DISK: $TEXT"
+
+echo "$TEXT"

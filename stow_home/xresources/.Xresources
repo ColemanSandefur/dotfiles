@@ -6,10 +6,10 @@
 !URxvt.font: xft:RobotoMono Nerd Font:style=Medium,Regular:size=11,RobotoMonoMediumforPowerline:style=Medium:size=11, xft:Symbola:size=8, xft:Noto Sans Mono:style=Regular, xft:Inter,Inter Medium:style=Medium,Regular:size=10
 !URxvt.font: xft:Noto Sans Mono,Noto Sans Mono Medium:style=Medium,Regular:size=10
 !URxvt.font: xft:Inter:style=Regular:size=10
-Xft.dpi: 100
+Xft.dpi: 125, 
 URxvt.font: xft:RobotoMonoMedium:size=13,xft:RobotoMono Nerd Font:style=Regular:size=10,xft:Symbola:size=10
 
-URxvt.perl-ext-common: resize-font
+URxvt.perl-ext-common: tabbedex,resize-font
 
 ! scrollbar
 URxvt.scrollstyle: plain
