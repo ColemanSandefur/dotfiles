@@ -18,7 +18,6 @@
       "path": "/usr/lib/jvm/default/",
       "default": true
     }
-  ],
-
-  "rust-analyzer.inlayHints.enable": false
+  ]
 }
+

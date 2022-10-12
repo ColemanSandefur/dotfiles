@@ -16,6 +16,7 @@ exec_always /home/$USER/.config/i3/generate_on_reload.sh
 
 # Use windows key
 set $mod Mod4
+set $alt Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -25,7 +26,8 @@ for_window [instance="origin.exe"] floating enable # get origin working in i3
 # Screenshots
 set $screenshotLocation "/home/$USER/Pictures/Screenshots/$(date '+%Y-%m-%d-%T')-screenshot.png"
 # Full monitor screenshot (both monitors)
-bindsym Print exec --no-startup-id maim -u $screenshotLocation
+#bindsym Print exec --no-startup-id maim -u $screenshotLocation
+bindsym Print exec --no-startup-id $HOME/.config/i3/screenshot # Pulls up a rofi menu to choose screenshot
 # Window screenshot
 bindsym $mod+Print exec --no-startup-id maim -u --window $(xdotool getactivewindow) $screenshotLocation
 # Selection screenshot
@@ -35,8 +37,6 @@ bindsym Shift+Print exec --no-startup-id maim -u --select $screenshotLocation
 bindsym Ctrl+Print exec --no-startup-id maim -u | xclip -selection clipboard -t image/png
 bindsym Ctrl+$mod+Print exec --no-startup-id maim -u --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
 bindsym Ctrl+Shift+Print exec --no-startup-id maim -u --select | xclip -selection clipboard -t image/png
-
-bindsym Alt+Print exec --no-startup-id screenshot
 
 # Custom application shortcuts
 bindsym $mod+backslash exec firefox

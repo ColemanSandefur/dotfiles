@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Show a rofi window for choosing screenshot variant
+
+# Variants
+option0="selection"
+option1="selection (clipboard)"
+option2="window"
+option3="window (clipboard)"
+option4="screen"
+option5="screen (clipboard)"
+
+options="$option0\n$option1\n$option2\n$option3\n$option4\n$option5"
+
+chosen="$(echo -e "$options" | rofi -dmenu -p "screenshot")"
+
+# Screenshots
+screenshotLocation="/home/$USER/Pictures/Screenshots/$(date '+%Y-%m-%d-%T')-screenshot.png"
+
+case $chosen in
+    # Selection
+    $option0)
+        maim -u --select $screenshotLocation;;
+    $option1)
+        maim -u --select | xclip -selection clipboard -t image/png;;
+
+    # Window
+    $option2)
+        maim -u --window $(xdotool getactivewindow) $screenshotLocation;;
+    $option3)
+        maim -u --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png;;
+
+    # Screen
+    $option4)
+        maim -u $screenshotLocation;;
+    $option5)
+        maim -u | xclip -selection clipboard -t image/png;;
+esac
